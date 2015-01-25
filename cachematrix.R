@@ -8,10 +8,10 @@
 ## Function Name: makeCacheMatrix
 ## Arguments: x :: Sample matrix on which the operations will be done.
 ## Returns : A list of functions namely: set, get, setInverse, getInverse
-## set function: Sets the value of the matrix on which the operations will be done.
-## get function: Gets the value of the matrix that had been set earlier
-## setInverse: argument: inv :: sets the inverse of the matrix.
-## getInverse: acts as a cache and return the inverse of the matrix calculated earlier.
+## 1. set function: Sets the value of the matrix on which the operations will be done.
+## 2. get function: Gets the value of the matrix that had been set earlier
+## 3. setInverse: argument: inv :: sets the inverse of the matrix.
+## 4. getInverse: acts as a cache and return the inverse of the matrix calculated earlier.
 
 makeCacheMatrix <- function(x = matrix()) {
 	
@@ -36,6 +36,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## Function Name: cacheSolve
 ## Fixed Arguments: x: Special matrx vector returned by makeCacheMatrix function
+## Returns : The inverse of the matrix provided by the special matrix vector
 ## This function checks if the inverse of the matrix has already been calculated 
 ## If already calculated returns the same, else calculates the inverse, sets the inverse
 ## into the special vector for future use and returns the inverse as well. 
